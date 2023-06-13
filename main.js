@@ -67,15 +67,6 @@ const setColor = (colorChoice) => {
     color = colorChoice;
 }
 
-const eraser = () => {
-    let divs = document.querySelectorAll('.gridCell');
-    divs.forEach((div) => {
-        div.addEventListener('mouseover', () => {
-            div.style.backgroundColor = 'transparent';
-        })
-    })
-
-}
 
 const reset = () => {
     let divs = document.querySelectorAll('.gridCell');
