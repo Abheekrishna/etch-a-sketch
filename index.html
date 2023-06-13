@@ -8,19 +8,23 @@
 </head>
 <body>
     <div class="container">
+        
+        <p id="errorMsg"></p>
+        <p id="message"></p>
+        <!--Canvas-->
+        <div id="canvas" class="canvas"></div>
+        
+
         <div class="btns">
             <button class="btn" id="width">Set width</button>
-            <button class="btn" id="default">Default</button>
-            <button class="btn" id="rainbow">Rainbow</button>
-            <button class="btn" id="eraser">Eraser</button>
-            <button class="btn" id="reset">Reset</button>
+            <button class="btn" id="default" onclick="setColor('#393939')">Default</button>
+            <button class="btn" id="rainbow" onclick="setColor('random')">Rainbow</button>
+            <button class="btn" id="eraser" onclick="eraser()">Eraser</button>
+            <button class="btn" id="reset" onclick="reset()">Reset</button>
         </div>
-
-        <!--Canvas-->
-        <div id="canvas"></div>
     </div>
 
 
-    <script src="app.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
