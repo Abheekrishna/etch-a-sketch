@@ -57,6 +57,8 @@ function colorDiv() {
     if(click) {
         if(color == 'random') {
             this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`
+        } else if (color == 'eraser') {
+            this.style.backgroundColor = 'transparent';
         } else {
             this.style.backgroundColor = '#393939';
         }
