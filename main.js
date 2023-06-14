@@ -74,3 +74,8 @@ const reset = () => {
     let divs = document.querySelectorAll('.gridCell');
     divs.forEach((div) => div.style.backgroundColor = '#fff')
 }
+
+
+const year = document.getElementById('year');
+const newDate = new Date().getFullYear();
+year.innerText = `${newDate}`;
